@@ -84,7 +84,7 @@
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="416,305.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="416,482" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sco:Collection(sma:PSObject)" Name="test" />
       <Variable x:TypeArguments="x:String" Name="scripted" />
@@ -95,7 +95,7 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:ReadTextFile File="{x:Null}" Content="[scripted]" DisplayName="Read Text File" FileName="C:\Users\jose.quesada\Downloads\New folder (19)\cript2.txt" sap:VirtualizedContainerService.HintSize="354,114" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
-    <ui:InvokePowerShell x:TypeArguments="sma:PSObject" ContinueOnError="{x:Null}" CommandText="[scripted]" DisplayName="Invoke Power Shell" sap:VirtualizedContainerService.HintSize="354,103.33333333333333" sap2010:WorkflowViewState.IdRef="InvokePowerShell`1_1" IsScript="True" Output="[test]" PowerShellProcess="PowerShellCore">
+    <ui:InvokePowerShell x:TypeArguments="sma:PSObject" ContinueOnError="{x:Null}" CommandText="[scripted]" DisplayName="Invoke Power Shell" sap:VirtualizedContainerService.HintSize="354,112.66666666666667" sap2010:WorkflowViewState.IdRef="InvokePowerShell`1_1" IsScript="True" Output="[test]" PowerShellProcess="PowerShellCore">
       <ui:InvokePowerShell.Parameters>
         <scg:Dictionary x:TypeArguments="x:String, InArgument" />
       </ui:InvokePowerShell.Parameters>
@@ -103,5 +103,6 @@
         <scg:Dictionary x:TypeArguments="x:String, Argument" />
       </ui:InvokePowerShell.PowerShellVariables>
     </ui:InvokePowerShell>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;asas&quot;]" />
   </Sequence>
 </Activity>
